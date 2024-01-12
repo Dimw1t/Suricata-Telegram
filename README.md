@@ -37,6 +37,8 @@ systemctl enable suricata
 
 ## Configuración
 
+### Instalación
+
 1. Entramos en el archivo de configuración
 
 ```
@@ -54,6 +56,8 @@ nano /etc/suricata/suricata.yaml
 Guardamos y cerramos el archivo. 
 
 Hay más configuraciones que se pueden modificar según las necesidades, aquí se han modificado solo las básicas para el servicio. 
+
+## Creacción y administración de reglas y alertas
 
 
 
