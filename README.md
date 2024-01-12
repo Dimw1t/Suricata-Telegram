@@ -57,7 +57,10 @@ Guardamos y cerramos el archivo.
 
 Hay más configuraciones que se pueden modificar según las necesidades, aquí se han modificado solo las básicas para el servicio. 
 
-## Creacción y administración de reglas y alertas
+### Creacción y administración de reglas y alertas
 
+#### Reglas para nmap
 
+- Copiar el archivo local.rules de este repositorio y pegarlo en /etc/suricata/rules/local.rules [Enlace aquí](local.rules)
 
+  
