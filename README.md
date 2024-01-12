@@ -37,7 +37,7 @@ systemctl enable suricata
 
 ## Configuración
 
-### Instalación
+### Configuración básica
 
 1. Entramos en el archivo de configuración
 
