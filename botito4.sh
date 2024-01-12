@@ -20,8 +20,8 @@ if [ "$last_ip" != "$stored_ip" ]; then
     echo "$last_mssg" > "$temp_file"
 
     # Replace 'XXXXX' with your actual Telegram bot token and 'YYYYY' with your actual chat ID
-    telegram_bot_token="6954425885:AAFLwqa_4ZNt_UCwJIOruHmXsLYS6GfhpM0"
-    chat_id="6485900541"
+    telegram_bot_token="[Escribe tu token]"
+    chat_id="[Escribe tu ID chat]"
 
     # Construct the curl command with the obtained IP address and file upload
     curl_command="curl -F document=@${temp_file} \
