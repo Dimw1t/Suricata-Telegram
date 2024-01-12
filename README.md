@@ -13,3 +13,26 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
 - Notificaciones instantáneas a través de Telegram.
 - Mejora la capacidad de respuesta ante posibles amenazas.
 - Personalización de alertas según tus necesidades.
+
+## Instalación
+
+1. Añadimos el repositorio
+
+```
+add-apt-repository ppa:oisf/suricata-stable
+```
+
+2. Actualización e Instalación
+
+```
+apt-get update
+apt-get install suricata
+```
+
+3. Activamos el inicio Automático
+
+```
+systemctl enable suricata
+```
+
+## Configuración
