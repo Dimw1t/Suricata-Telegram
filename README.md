@@ -87,6 +87,7 @@ nano /etc/suricata/suricata.yaml
 systemctl restart suricata
 ```
 
+#### Comprobación 
 
 Una vez lleguemos hasta aqui pordemos comprobar que suricata funciona. 
 Hacemos un nmap -sT -A (ip) y comprobamos los logs de suricata. 
@@ -102,3 +103,11 @@ tail -f /var/log/suricata/fast
 ![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/86570241-f661-4552-bf8c-b19a9274a96a)
 
 Como podemos comprobar nos da una información detallada del nmap que acabo de recibir. 
+
+## Configuración Alertas con telegram
+
+Para configurar las Alertas de Telegram solo tendremos que copiar el script bobito4.sh que incluye este repositorio. Guardar en el sistema, y crear un cron con el periodo que mas se adapte a nuestras necesidades que ejecute este script. 
+
+[Enlace al script](bobito4.sh)
+
+
