@@ -87,3 +87,18 @@ nano /etc/suricata/suricata.yaml
 systemctl restart suricata
 ```
 
+
+Una vez lleguemos hasta aqui pordemos comprobar que suricata funciona. 
+Hacemos un nmap -sT -A (ip) y comprobamos los logs de suricata. 
+
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/e75cad5a-361d-43f4-bfca-970837ffaade)
+
+Ejecutamos el comando:
+
+```
+tail -f /var/log/suricata/fast
+```
+
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/86570241-f661-4552-bf8c-b19a9274a96a)
+
+Como podemos comprobar nos da una información detallada del nmap que acabo de recibir. 
