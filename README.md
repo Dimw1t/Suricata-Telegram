@@ -36,3 +36,24 @@ systemctl enable suricata
 ```
 
 ## Configuración
+
+1. Entramos en el archivo de configuración
+
+```
+nano /etc/suricata/suricata.yaml
+```
+
+2. Comprobamos que la ruta de los logs sea correcta.
+   
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/ecf8708c-6aab-4308-97d5-bb56be9953b3)
+
+3. En este apartado configuramos nuestras interfaces de red, se pueden añadir tantas como tengamos.
+
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/46ccd33a-9965-449d-8c92-25c82a5c3120)
+
+Guardamos y cerramos el archivo. 
+
+Hay mas configuraciones que se pueden modificar segun las necesidades, nosotros hemos modificado solo las básicas para el servicio. 
+
+
+
