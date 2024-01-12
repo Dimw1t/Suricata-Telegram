@@ -46,8 +46,10 @@ nano /etc/suricata/suricata.yaml
 ```
 
 2. Comprobamos que la ruta de los logs sea correcta.
-   
-![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/ecf8708c-6aab-4308-97d5-bb56be9953b3)
+
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/24d66af1-a03c-41d1-b057-5966160b7625)
+
+* Por defecto viene /var/log/suricata/ y hay que añadirle rules/
 
 3. En este apartado configuramos nuestras interfaces de red, se pueden añadir tantas como tengamos.
 
