@@ -53,7 +53,7 @@ nano /etc/suricata/suricata.yaml
 
 Guardamos y cerramos el archivo. 
 
-Hay mas configuraciones que se pueden modificar segun las necesidades, nosotros hemos modificado solo las básicas para el servicio. 
+Hay más configuraciones que se pueden modificar según las necesidades, aquí se han modificado solo las básicas para el servicio. 
 
 
 
