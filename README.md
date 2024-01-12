@@ -6,7 +6,7 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
 
 **Características destacadas:**
 
-Integración sencilla con Suricata.
-Notificaciones instantáneas a través de Telegram.
-Mejora la capacidad de respuesta ante posibles amenazas.
-Personalización de alertas según tus necesidades.
+- Integración sencilla con Suricata.
+- Notificaciones instantáneas a través de Telegram.
+- Mejora la capacidad de respuesta ante posibles amenazas.
+- Personalización de alertas según tus necesidades.
