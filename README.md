@@ -47,9 +47,8 @@ nano /etc/suricata/suricata.yaml
 
 2. Comprobamos que la ruta de los logs sea correcta.
 
-![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/24d66af1-a03c-41d1-b057-5966160b7625)
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/d8553575-dd5a-4b7d-8024-dba2e7168825)
 
-* Por defecto viene /var/log/suricata/ y hay que añadirle rules/
 
 3. En este apartado configuramos nuestras interfaces de red, se pueden añadir tantas como tengamos.
 
@@ -63,6 +62,28 @@ Hay más configuraciones que se pueden modificar según las necesidades, aquí s
 
 #### Reglas para nmap
 
+  1. Creamos el directorio
+
+```
+mkdir -p /etc/suricata/rules
+```
+
 - Copiar el archivo local.rules de este repositorio y pegarlo en /etc/suricata/rules/local.rules [Enlace aquí](local.rules)
 
-  
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/23f42020-14c3-421e-8af5-6fbfd6a5712f)
+
+  2. Entramos de nuevo en el archivo de configuración
+
+```
+nano /etc/suricata/suricata.yaml
+```
+
+  3. Añadimos la nueva regla (local.rules)
+
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/e28338a6-e31d-4fbf-8055-e732a19a66e7)
+
+
+```
+systemctl restart suricata
+```
+
