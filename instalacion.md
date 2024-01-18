@@ -38,7 +38,17 @@ nano /etc/suricata/suricata.yaml
 
 3. En este apartado configuramos nuestras interfaces de red, se pueden añadir tantas como tengamos.
 
-![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/46ccd33a-9965-449d-8c92-25c82a5c3120)
+Determine las interfaces y las direcciones IP en las que Suricata debería inspeccionar los paquetes de red:
+
+```
+af-packet:
+    - interface: enp0s3
+      cluster-id: 99
+      cluster-type: cluster_flow
+      defrag: yes
+      use-mmap: yes
+      tpacket-v3: yes
+```
 
 Guardamos y cerramos el archivo. 
 
