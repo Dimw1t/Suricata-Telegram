@@ -25,8 +25,7 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
 
 <p align="center">
   <a href="https://docs.suricata.io/en/latest/">
-    <img src="![icono](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/f94baab6-1087-4711-b8b1-af1e2f06e112)
-" alt="Suricata Documentation">
+    <img src="icons8.svg" alt="Suricata Documentation">
   </a>
 </p>
 
