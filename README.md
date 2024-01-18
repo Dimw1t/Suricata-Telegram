@@ -23,11 +23,7 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
 
 ## Referencias 
 
-<p align="center">
-  <a href="https://docs.suricata.io/en/latest/">
-    <img src="icons8.svg" alt="Suricata Documentation">
-  </a>
-</p>
+Documentación Oficial: https://docs.suricata.io/
 
 
 ## Licencia
