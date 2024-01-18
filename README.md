@@ -14,6 +14,9 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
 - Mejora la capacidad de respuesta ante posibles amenazas.
 - Personalización de alertas según tus necesidades.
 
+    - **Versión**
+       - Suricata 6.0.10
+
 ## Contenidos
 
   * 1- [Instalacion](instalacion.md)
