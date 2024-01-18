@@ -2,7 +2,7 @@
 
 
 
-- Copiar el archivo local.rules de este repositorio y pegarlo en /var/lib/suricata/rules/local.rules [Enlace aquí](local.rules)
+- Copiar el archivo ```local.rules``` de este repositorio y pegarlo en /var/lib/suricata/rules/local.rules [Enlace aquí](local.rules)
 
 ![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/23f42020-14c3-421e-8af5-6fbfd6a5712f)
 
