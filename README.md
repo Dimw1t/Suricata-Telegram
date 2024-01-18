@@ -14,9 +14,9 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
 - Mejora la capacidad de respuesta ante posibles amenazas.
 - Personalización de alertas según tus necesidades.
 
-## Contenido
+## Contenidos
 
-- 1. [Instalacion](instalacion.md)
+  * 1- [Instalacion](instalacion.md)
 
 
 
