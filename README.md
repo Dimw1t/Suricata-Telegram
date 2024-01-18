@@ -29,7 +29,7 @@ Documentación Oficial: https://docs.suricata.io/
 ## Licencia
 
 <p align="center">
-  <img src="" alt="licencia">
+  <img src="88x31.png" alt="licencia">
 </p>
 
 
