@@ -1,49 +1,55 @@
-Agregar una nueva fuente de reglas
+### Creacción y administración de reglas y alertas
 
-Es posible agregar nuevas reglas de una fuente en particular.
+#### Reglas para nmap
 
-Primero actualice la lista de fuentes disponibles:
-
-```
-sudo suricata-update update-sources
-```
-
-Luego vea las fuentes disponibles:
+  1. Creamos el directorio
 
 ```
-sudo suricata-update list-sources
+mkdir -p /etc/suricata/rules
 ```
 
-Para verificar qué fuentes ya están activadas, ejecute el siguiente comando:
+- Copiar el archivo local.rules de este repositorio y pegarlo en /etc/suricata/rules/local.rules [Enlace aquí](local.rules)
+
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/23f42020-14c3-421e-8af5-6fbfd6a5712f)
+
+  2. Entramos de nuevo en el archivo de configuración
 
 ```
-sudo suricata-update list-enabled-sources
+nano /etc/suricata/suricata.yaml
 ```
 
-Active una nueva fuente, por ejemplo, la fuente de las reglas oisf / trafficid .
+  3. Añadimos la nueva regla (local.rules)
+
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/e28338a6-e31d-4fbf-8055-e732a19a66e7)
+
 
 ```
-sudo suricata-update enable-source oisf/trafficid
+systemctl restart suricata
 ```
 
-Luego, debe actualizar las reglas (consulte Actualización de las reglas).
+#### Comprobación 
 
-Actualizar las reglas
+Una vez lleguemos hasta aqui pordemos comprobar que suricata funciona. 
+Hacemos un nmap -sT -A (ip) y comprobamos los logs de suricata. 
 
-Para integrar la detección de las últimas amenazas, es necesario actualizar periódicamente las reglas de Suricata ejecutando el siguiente comando:
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/e75cad5a-361d-43f4-bfca-970837ffaade)
 
-```
-sudo suricata-update --disable-conf=/etc/suricata/disable.conf
-```
-
-Entonces todo lo que tiene que hacer es reiniciar el servicio Suricata:
+Ejecutamos el comando:
 
 ```
-sudo systemctl restart suricata.service
+tail -f /var/log/suricata/fast
 ```
-4. Verificar el estado de Suricata
-Para asegurarnos de que Suricata se esta ejecutando, miremos los logs de suricata.
 
-```
-$ sudo tail /var/log/suricata/suricata.log
-```
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/86570241-f661-4552-bf8c-b19a9274a96a)
+
+Como podemos comprobar nos da una información detallada del nmap que acabo de recibir. 
+
+## Configuración Alertas con telegram
+
+Para configurar las Alertas de Telegram solo tendremos que copiar el script bobito4.sh que incluye este repositorio. Guardar en el sistema, y crear un cron con el periodo que mas se adapte a nuestras necesidades que ejecute este script. 
+
+[Enlace al script](botito4.sh)
+
+1. Modificamos los parametros **telegram_bot_token** y **chat_id**
+
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/67c26142-2b9a-4c7e-91a4-8a50338a1d71)
