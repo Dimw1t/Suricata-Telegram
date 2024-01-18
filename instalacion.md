@@ -1,16 +1,18 @@
 ## Instalación
 
-1. Añadimos el repositorio
+```
+apt update
+apt upgrade
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:oisf/suricata-stable
+sudo apt update
+sudo apt install suricata jq
+```
+Puedes verificar qué versión de Suricata tienes ejecutando y con qué opciones, así como el estado del servicio:
 
 ```
-add-apt-repository ppa:oisf/suricata-stable
-```
-
-2. Actualización e Instalación
-
-```
-apt-get update
-apt-get install suricata
+sudo suricata --build-info
+sudo systemctl status suricata
 ```
 
 3. Activamos el inicio Automático
