@@ -31,10 +31,10 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
 </p>
 
 
-<h2 align="center"> Licencia  </h2>
+## Licencia
 
 <p align="center">
-  <img src="/img/88x31.png" alt="licencia">
+  <img src="" alt="licencia">
 </p>
 
 
