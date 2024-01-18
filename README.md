@@ -17,7 +17,7 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
 ## Contenidos
 
   * 1- [Instalacion](instalacion.md)
-
+  * 2- [Creación de Reglas](reglas.md)
 
 
 
