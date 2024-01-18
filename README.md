@@ -21,6 +21,21 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
   * 2- [Creación de Reglas](reglas.md)
   * 3- [Configuración de alertas con Telegram](telegram.md)
 
+## Referencias 
+
+<p align="center">
+  <a href="https://docs.suricata.io/en/latest/">
+    <img src="" alt="Suricata Documentation">
+  </a>
+</p>
+
+
+
+<h2 align="center"> Licencia  </h2>
+
+<p align="center">
+  <img src="/img/88x31.png" alt="licencia">
+</p>
 
 
 
