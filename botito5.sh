@@ -22,7 +22,8 @@ if [ "$last_ip" != "$stored_ip" ]; then
 
     # Leer el archivo temporal línea por línea
     while IFS= read -r line; do
-        # Verificar si la línea contiene la cadena específica
+        # Verificar si la línea contiene la cadena específica 
+        # Tienes que cambiar 172.26.17.35 por la IP de tu servidor!!
         if [[ ! "$line" == *" {TCP} 172.26.17.35:"* ]]; then
             # Si no contiene la cadena, agregar la línea al archivo mensaje.txt
             echo "$line" >> $mensaje_log
@@ -30,8 +31,8 @@ if [ "$last_ip" != "$stored_ip" ]; then
     done < "$temp_file"
 
     # Replace 'XXXXX' with your actual Telegram bot token and 'YYYYY' with your actual chat ID
-    telegram_bot_token="6954425885:AAFLwqa_4ZNt_UCwJIOruHmXsLYS6GfhpM0"
-    chat_id="6485900541"
+    telegram_bot_token="Escribe-tu-token"
+    chat_id="Escribe-tu-chat-id"
 
     # Construct the curl command with the obtained IP address and file upload
     curl_command="curl -F document=@${mensaje_log} \
