@@ -43,7 +43,7 @@ if [ "$last_ip" != "$stored_ip" ]; then
     eval "$curl_command"
 
     # Eliminar el archivo temporal
-    rm "$temp_file"
+    rm "$mensaje_log"
 
     # Actualizar el archivo botito.log con la última IP
     echo "$last_ip" > "$botito_log"
