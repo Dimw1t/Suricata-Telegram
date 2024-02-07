@@ -21,7 +21,7 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
 
 ## Contenidos
 
-  * 1- [Instalacion de suricata](instalacion.md)
+  * 1- [Instalacion de Suricata](instalacion.md)
   * 2- [Creación de Reglas](reglas.md)
   * 3- [Configuración de alertas con Telegram](telegram.md)
 
