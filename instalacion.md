@@ -18,6 +18,7 @@ sudo apt update
 sudo apt upgrade
 ```
 Instala Suricata
+
 **jq** es una herramienta de línea de comandos para procesar y manipular datos JSON. Es posible que jq se esté instalando junto con Suricata para facilitar el procesamiento de los registros generados por Suricata, ya que a menudo se presentan en formato JSON.
 
 ```
