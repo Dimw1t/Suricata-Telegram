@@ -1,4 +1,6 @@
 ## Instalación
+<code> Version Sistema Operativo Debian </code>
+
 
 ```
 apt update
