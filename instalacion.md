@@ -2,11 +2,6 @@
 
 Instalación sobre la version: Ubuntu 22.04.3
 
-Actualizar sistema:
-```
-apt update
-apt upgrade
-```
 Este comando instala un conjunto de herramientas comunes que son necesarias para administrar los repositorios de software en Ubuntu y distribuciones basadas en Debian.
 ```
 sudo apt-get install software-properties-common
@@ -20,8 +15,10 @@ Actualiza la lista de paquetes disponibles en los repositorios de software confi
 
 ```
 sudo apt update
+sudo apt upgrade
 ```
 Instala Suricata
+**jq** es una herramienta de línea de comandos para procesar y manipular datos JSON. Es posible que jq se esté instalando junto con Suricata para facilitar el procesamiento de los registros generados por Suricata, ya que a menudo se presentan en formato JSON.
 
 ```
 sudo apt install suricata jq
