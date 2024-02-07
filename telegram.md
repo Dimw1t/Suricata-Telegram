@@ -1,4 +1,4 @@
-## Configuración Alertas con telegram
+## Configuración Alertas con Telegram
 
 Para habilitar las alertas de Telegram, simplemente sigue estos pasos y utiliza el script proporcionado (bobito4.sh) incluido en este repositorio
 
