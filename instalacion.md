@@ -1,12 +1,29 @@
 ## Instalación
 
 Instalación sobre la version: Ubuntu 22.04.3
+
+Actualizar sistema:
 ```
 apt update
 apt upgrade
+```
+Este comando instala un conjunto de herramientas comunes que son necesarias para administrar los repositorios de software en Ubuntu y distribuciones basadas en Debian.
+```
 sudo apt-get install software-properties-common
+```
+Agrega un nuevo repositorio de software a tu sistema
+
+```
 sudo add-apt-repository ppa:oisf/suricata-stable
+```
+Actualiza la lista de paquetes disponibles en los repositorios de software configurados en tu sistema para que refleje los cambios realizados al agregar el nuevo repositorio.
+
+```
 sudo apt update
+```
+Instala Suricata
+
+```
 sudo apt install suricata jq
 ```
 Puedes verificar qué versión de Suricata tienes ejecutando y con qué opciones, así como el estado del servicio:
