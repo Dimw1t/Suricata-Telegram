@@ -2,7 +2,6 @@
 
 ![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/69f3fdbf-19c8-4932-996a-a2b25d7baf4c)
 
-        Suricata 6.0.10
        
 ## Introducción
 
@@ -14,6 +13,11 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
 - Notificaciones instantáneas a través de Telegram.
 - Mejora la capacidad de respuesta ante posibles amenazas.
 - Personalización de alertas según tus necesidades.
+
+Este repositorio utiliza:
+
+        Suricata 6.0.10
+        Ubuntu 22.04.3        
 
 ## Contenidos
 
