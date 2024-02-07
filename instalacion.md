@@ -1,7 +1,6 @@
 ## Instalación
-<code> Version Sistema Operativo Debian </code>
 
-
+Instalación sobre la version: Ubuntu 22.04.3
 ```
 apt update
 apt upgrade
