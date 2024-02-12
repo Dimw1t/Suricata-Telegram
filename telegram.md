@@ -2,7 +2,7 @@
 
 Para habilitar las alertas de Telegram, simplemente sigue estos pasos y utiliza el script proporcionado (bobito4.sh) incluido en este repositorio
 
-- 1- Copia el script bobito.sh en el directorio /etc/suricata. [Enlace al script](botito5.sh)
+- 1- Copia el script bobito.sh en el directorio /etc/suricata. [Enlace al script](botito.sh)
 
 - 2- Modificamos los parametros **telegram_bot_token** y **chat_id**. Puedes encontrar estos parámetros en la plataforma Telegram al crear un nuevo bot.
 
