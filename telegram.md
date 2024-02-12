@@ -1,4 +1,8 @@
 # Funcionamiento de las Alertas en Telegram
+
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/2f7a82a5-6109-4122-856f-868c39dc5173)
+
+
 Telegram es una aplicación de mensajería instantánea que permite enviar mensajes, fotos, videos y otros archivos de forma segura y rápida. Para recibir alertas en Telegram, necesitas configurar un bot que actúe como intermediario entre tu sistema y la plataforma de Telegram. Aquí está el proceso general:
 
 ### Creación del Bot en Telegram:
