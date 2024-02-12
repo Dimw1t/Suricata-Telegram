@@ -12,6 +12,6 @@ Para habilitar las alertas de Telegram, simplemente sigue estos pasos y utiliza 
 
 ``` Crontab -e```
 
-![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/aed53f86-ba5f-487b-9e14-5e119b4c6df7)
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/2a1fd81c-8706-4155-80ed-0036bf115abd)
 
 Siguiendo estos pasos, las alertas de Suricata serán enviadas a través de Telegram según la configuración que hayas establecido. Asegúrate de ajustar la frecuencia del cron y otros parámetros según tus preferencias y requisitos específicos.
