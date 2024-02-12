@@ -1,4 +1,4 @@
-# Funcionamiento de las Alertas en Telegram
+# Alertas en Telegram
 
 ![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/2f7a82a5-6109-4122-856f-868c39dc5173)
 
