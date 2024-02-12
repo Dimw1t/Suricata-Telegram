@@ -1,3 +1,23 @@
+# Funcionamiento de las Alertas en Telegram
+Telegram es una aplicación de mensajería instantánea que permite enviar mensajes, fotos, videos y otros archivos de forma segura y rápida. Para recibir alertas en Telegram, necesitas configurar un bot que actúe como intermediario entre tu sistema y la plataforma de Telegram. Aquí está el proceso general:
+
+### Creación del Bot en Telegram:
+
+1- Para crear un bot en Telegram, necesitas comunicarte con BotFather, que es el bot oficial de Telegram encargado de crear y gestionar bots.
+Inicia una conversación con BotFather y utiliza el comando /newbot para crear un nuevo bot. Sigue las instrucciones para proporcionar un nombre y un nombre de usuario para tu bot.
+Obtención del Token del Bot:
+
+2- Después de crear el bot, BotFather te proporcionará un token único que necesitarás para interactuar con la API de Telegram en nombre de tu bot. Este token actúa como una especie de contraseña para tu bot y debes mantenerlo seguro.
+
+### Configuración de Parámetros:
+
+3- Una vez que tengas el token de tu bot, puedes utilizarlo para enviar y recibir mensajes a través de la API de Telegram. Además del token, también necesitarás el chat_id, que es el identificador único de la conversación a la que quieres enviar mensajes. Puedes obtener este ID enviando un mensaje al bot que has creado y luego utilizando la API de Telegram para recuperar el chat_id.
+
+### Envío de Mensajes:
+
+4- Con el token del bot y el chat_id, puedes enviar mensajes a través de la API de Telegram utilizando diferentes métodos proporcionados por la API, como sendMessage para enviar mensajes de texto, sendPhoto para enviar imágenes, sendDocument para enviar documentos, etc.
+
+
 ## Configuración Alertas con Telegram
 
 Para habilitar las alertas de Telegram, simplemente sigue estos pasos y utiliza el script proporcionado (bobito4.sh) incluido en este repositorio
