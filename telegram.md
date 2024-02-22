@@ -16,7 +16,7 @@ Telegram es una aplicación de mensajería instantánea que permite enviar mensa
 
 ### Configuración de Parámetros:
 
-3- Una vez que tengas el token de tu bot, puedes utilizarlo para enviar y recibir mensajes a través de la API de Telegram. Además del token, **también necesitarás el chat_id**, que es el identificador único de la conversación a la que quieres enviar mensajes. Puedes **obtener este ID enviando un mensaje al bot que has creado** y luego utilizando la API de Telegram para recuperar el chat_id.
+3- Una vez que tengas el token de tu bot, puedes utilizarlo para enviar y recibir mensajes a través de la API de Telegram. Además del token, **también necesitarás el chat_id**, que es el identificador único de la conversación a la que quieres enviar mensajes. Puedes **obtener este ID enviando un mensaje al bot (IDbot)**. Abre este chat y escribe **/getid**.
 
 ### Envío de Mensajes:
 
