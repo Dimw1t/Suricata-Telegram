@@ -24,67 +24,26 @@ chmod 777 ManoliBot2.sh
 
 4. Ahora vamos a crear el servicio.
 
-Entramos en el directorio /etc/init.d y creamos el siguiente archivo.
+Entramos en el directorio /etc/systemd/system y creamos el siguiente archivo.
 
 ```
-nano manoli-bot
+nano manoli-bot.service
 ```
 Y pegamos el siguiente contenido
 
 ```
-#!/bin/sh
-### BEGIN INIT INFO
-# Provides:          manoli_bot
-# Required-Start:    $remote_fs $syslog
-# Required-Stop:     $remote_fs $syslog
-# Default-Start:     2 3 4 5
-# Default-Stop:      0 1 6
-# Short-Description: Start/stop ManoliBot script
-# Description:       This script manages the execution of ManoliBot.sh as a service.
-### END INIT INFO
+[Unit]
+Description=ManoliBot es una persona maravillosa y vamos a salir a decirselo. 
 
-# Ruta al script ManoliBot.sh
-MANOLIBOT_SCRIPT="/home/2asir/Escritorio/ManoliBot/beta/ManoliBot-1.0.sh"
-PIDFILE="/var/run/manoli_bot.pid"
+[Service]
+Type=simple
+User=root
+ExecStart=/opt/ManoliBot/ManoliBot-1.0.sh
+RestartSec=5
 
-# Función para iniciar el servicio
-start_service() {
-    echo "Iniciando ManoliBot..."
-    # Iniciar ManoliBot en segundo plano y guardar su PID
-    nohup "$MANOLIBOT_SCRIPT" >/dev/null 2>&1 &
-    echo $! > "$PIDFILE"
-}
+[Install]
+WantedBy=default.target
 
-# Función para detener el servicio
-stop_service() {
-    echo "Deteniendo ManoliBot..."
-    # Obtener el PID del proceso ManoliBot
-    if [ -f "$PIDFILE" ]; then
-        PID=$(cat "$PIDFILE")
-        # Detener el proceso ManoliBot
-        kill "$PID"
-        rm "$PIDFILE"
-    else
-        echo "ManoliBot no está en ejecución."
-    fi
-}
-
-case "$1" in
-    start)
-        start_service
-        ;;
-    stop)
-        stop_service
-        ;;
-    restart)
-        stop_service
-        start_service
-        ;;
-    *)
-        echo "Uso: $0 {start|stop|restart}"
-        exit 1
-        ;;
-esac
 ```
 
 Ahora ya podemos Ejecutar y parar nuestro servicio utilizando: 
@@ -92,4 +51,5 @@ Ahora ya podemos Ejecutar y parar nuestro servicio utilizando:
 ```
 systemctl start manoli-bot
 systemctl stop manoli-bot
+systemctl enable manoli-bot
 ```
