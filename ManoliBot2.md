@@ -1,7 +1,7 @@
 # Ejecutar comandos desde Telegram
 
 
-En este punto, tenemos un sistemas de detención de intrusos que nos envia alertas a Telegram si detecta alguna intrusion. 
+En este punto, tenemos un sistema de detención de intrusos que nos envia alertas a Telegram si detecta alguna intrusion. 
 A partir de aqui, vamos a implementar lo necesario, para poder interactuar con el Bot y ejecutar comandos en nuestro servidor. 
 
 Este repositorio contiene un sistema que permite ejecutar comandos en un servidor a través de Telegram. Esto es útil para la administración remota de sistemas.
