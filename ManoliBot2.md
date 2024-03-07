@@ -1,22 +1,24 @@
 # Ejecutar comandos desde Telegram
 
+
 En este punto, tenemos un sistemas de detención de intrusos que nos envia alertas a Telegram si detecta alguna intrusion. 
 A partir de aqui, vamos a implementar lo necesario, para poder interactuar con el Bot y ejecutar comandos en nuestro servidor. 
 
+Este repositorio contiene un sistema que permite ejecutar comandos en un servidor a través de Telegram. Esto es útil para la administración remota de sistemas.
 
-1. Entramos en la carpeta donde se encuetra nuestro bot
+1. Navega hasta la carpeta donde se encuentra el bot en el servidor:
    
 ```
 cd /opt/ManoliBot
 ```
 
-2.Añadimos el script [ManoliBot2.sh](ManoliBot2.sh) que se encuentra en este repositorio.
+2.Agrega el script  [ManoliBot2.sh](ManoliBot2.sh) que se encuentra en este repositorio.
 
 ```
 nano ManoliBot-2.0.sh
 ```
 
-3.Creamos las carpetas y Otorgamos los permisos
+3.Crea las carpetas necesarias y otorga los permisos adecuados:
 
 ```
 sudo mkdir /opt/ManoliBot/inf
@@ -26,14 +28,13 @@ sudo chmod 777 /opt/ManoliBot/ManoliBot-2.0.sh
 
 ```
 
-4. Ahora vamos a crear el servicio.
+4. Crea el servicio systemd para ManoliBot.
 
-Entramos en el directorio /etc/systemd/system y creamos el siguiente archivo.
+Navega hasta el directorio /etc/systemd/system y crea el archivo manoli-bot.service con el siguiente contenido:
 
 ```
 nano manoli-bot.service
 ```
-Y pegamos el siguiente contenido
 
 ```
 [Unit]
@@ -49,8 +50,10 @@ RestartSec=5
 WantedBy=default.target
 
 ```
+Guarda y cierra el editor.
 
-Ahora ya podemos Ejecutar y parar nuestro servicio utilizando: 
+
+5. Ahora puedes ejecutar y administrar el servicio ManoliBot utilizando los siguientes comandos:
 
 ```
 systemctl start manoli-bot
@@ -60,14 +63,18 @@ systemctl enable manoli-bot
 
 ![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/443b91b3-f5bc-42b2-a59a-9fedc704edb3)
 
-Vamos a crear una lista de control donde podemos añadir todos los comandos que NO queremos que se ejecuten en el servidor:
+### Lista de Comandos Prohibidos
 
+Para evitar ejecutar comandos peligrosos en el servidor, se proporciona un archivo donde se pueden listar todos los comandos que no se desean permitir. 
+
+1. Crea un nuevo archivo llamado forbidden_commands.txt utilizando el editor de texto de tu preferencia. Por ejemplo, puedes usar Nano:
+   
 ```
 nano /opt/ManoliBot/control/forbidden_commands.txt
 ```
 
-Aquí dentro añadiríamos los comandos. Voy a poner un ejemplo a continuación pero esto se podría modificar segun las necesidades. 
-
+2. En este archivo, puedes agregar los comandos que no deseas permitir. A continuación se proporciona un ejemplo de cómo podrías estructurar este archivo:
+   
 ![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/021a1269-e64e-4acb-b28d-2c681ce05108)
 
 ```
@@ -93,6 +100,7 @@ scp
 nano
 visudo
 ```
+Guarda los cambios y cierra el editor. Ahora, los comandos listados en este archivo no podrán ser ejecutados a través del bot de Telegram.
 
 ## Comprobaciones:
 
