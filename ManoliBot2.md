@@ -56,6 +56,40 @@ systemctl enable manoli-bot
 
 ![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/443b91b3-f5bc-42b2-a59a-9fedc704edb3)
 
+Vamos a crear una lista de control donde podemos añadir todos los comandos que NO queremos que se ejecuten en el servidor:
+
+```
+nano /opt/ManoliBot/forbidden_commands.txt
+```
+
+Aquí dentro añadiríamos los comandos. Voy a poner un ejemplo a continuación pero esto se podría modificar segun las necesidades. 
+
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/021a1269-e64e-4acb-b28d-2c681ce05108)
+
+```
+chmod -R 777 /
+dd if=/dev/zero of=/dev/sda
+mkfs.ext4 /dev/sda1
+shutdown -h now
+sudo
+su
+rm -rf /
+chmod
+chown
+mkfs
+dd
+shutdown
+reboot
+kill
+passwd
+wget
+curl
+cp
+scp
+nano
+visudo
+```
+
 ## Comprobaciones:
 
 Desde nuestro Telegram, vamos a nuestro bot:
