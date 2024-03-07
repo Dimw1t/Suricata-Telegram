@@ -59,7 +59,7 @@ systemctl enable manoli-bot
 Vamos a crear una lista de control donde podemos añadir todos los comandos que NO queremos que se ejecuten en el servidor:
 
 ```
-nano /opt/ManoliBot/forbidden_commands.txt
+nano /opt/ManoliBot/control/forbidden_commands.txt
 ```
 
 Aquí dentro añadiríamos los comandos. Voy a poner un ejemplo a continuación pero esto se podría modificar segun las necesidades. 
