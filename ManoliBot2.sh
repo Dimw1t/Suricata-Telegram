@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Replace 'Escribe-tu-token' with your actual Telegram bot token
-TELEGRAM_TOKEN="6809134013:AAFwfIW1Jvj4gGnRPAG_28_O2p__dlCXzqs"
+TELEGRAM_TOKEN="Escribe-tu-token"
 
 # Replace 'Escribe-tu-chat-id' with your actual chat ID
-CHAT_ID="6485900541"
+CHAT_ID="Escribe-tu-id"
 
 # Nombre del archivo donde se guardarán los mensajes
 mensaje_file="/home/2asir/Escritorio/ManoliBot/MensajesManoli.txt"
