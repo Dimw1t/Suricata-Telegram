@@ -86,3 +86,10 @@ case "$1" in
         ;;
 esac
 ```
+
+Ahora ya podemos Ejecutar y parar nuestro servicio utilizando: 
+
+```
+systemctl start manoli-bot
+systemctl stop manoli-bot
+```
