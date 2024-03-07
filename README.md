@@ -24,7 +24,7 @@ Este proyecto tiene como objetivo mejorar la visibilidad y la respuesta ante las
   * 1- [Instalacion de Suricata](instalacion.md)
   * 2- [Creación de Reglas](reglas.md)
   * 3- [Configuración de alertas con Telegram](telegram.md)
-  * 4- [Configuración de administración desde Telegram](ManoliBot2.md)
+  * 4- [Configuración de administración desde Telegram](ManoliBot2.md)[OPCIONAL]
 
 ## Licencia
 
