@@ -7,10 +7,10 @@ TELEGRAM_TOKEN="Escribe-tu-token"
 CHAT_ID="Escribe-tu-id"
 
 # Nombre del archivo donde se guardarán los mensajes
-mensaje_file="/home/2asir/Escritorio/ManoliBot/MensajesManoli.txt"
+mensaje_file="/opt/ManoliBot/inf/MensajesManoli.txt"
 
 # Ruta del archivo que contiene los comandos prohibidos
-forbidden_commands_file="/opt/ManoliBot/forbidden_commands.txt"
+forbidden_commands_file="/opt/ManoliBot/control/forbidden_commands.txt"
 
 # Función para enviar mensajes de respuesta
 send_message() {
