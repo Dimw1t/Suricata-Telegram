@@ -13,13 +13,17 @@ cd /opt/ManoliBot
 2.Añadimos el script [ManoliBot2.sh](ManoliBot2.sh) que se encuentra en este repositorio.
 
 ```
-nano ManoliBot2.sh
+nano ManoliBot-2.0.sh
 ```
 
-3. Otorgamos los permisos
+3.Creamos las carpetas y Otorgamos los permisos
 
 ```
-chmod 777 ManoliBot2.sh
+sudo mkdir /opt/ManoliBot/inf
+sudo mkdir /opt/ManoliBot/control
+sudo chmod u+w /opt/ManoliBot/control/
+sudo chmod 777 /opt/ManoliBot/ManoliBot-2.0.sh
+
 ```
 
 4. Ahora vamos a crear el servicio.
@@ -38,7 +42,7 @@ Description=ManoliBot es una persona maravillosa y vamos a salir a decirselo.
 [Service]
 Type=simple
 User=root
-ExecStart=/opt/ManoliBot/ManoliBot-1.0.sh
+ExecStart=/opt/ManoliBot/ManoliBot-2.0.sh
 RestartSec=5
 
 [Install]
