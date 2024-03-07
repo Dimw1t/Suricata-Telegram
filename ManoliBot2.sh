@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Replace 'Escribe-tu-token' with your actual Telegram bot token
-TELEGRAM_TOKEN="Escribe-tu-token"
+TELEGRAM_TOKEN="6809134013:AAFwfIW1Jvj4gGnRPAG_28_O2p__dlCXzqs"
 
 # Replace 'Escribe-tu-chat-id' with your actual chat ID
-CHAT_ID="Escribe-tu-id"
+CHAT_ID="6485900541"
 
 # Nombre del archivo donde se guardarán los mensajes
-mensaje_file="/opt/ManoliBot/MensajesManoli.txt"
+mensaje_file="/home/2asir/Escritorio/ManoliBot/MensajesManoli.txt"
 
 # Función para enviar mensajes de respuesta
 send_message() {
@@ -67,7 +67,10 @@ while true; do
                         send_message "¡Hola! Soy un bot de Telegram. Puedes enviarme comandos para ejecutar en el servidor."
                         ;;
                     "/ayuda")
-                        send_message "Lista de comandos disponibles:\n/ayuda - Muestra esta ayuda\n/ejecutar [comando] - Ejecuta un comando en el servidor"
+                        send_message "Lista de comandos disponibles:
+/ayuda - Muestra la ayuda
+/ejecutar - Ejecutar [comando]
+/start - Empezar a ejecutar comandos"
                         ;;
                     # Comando para ejecutar comandos en el servidor
                     "/ejecutar "*)
