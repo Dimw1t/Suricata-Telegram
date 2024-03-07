@@ -1,10 +1,9 @@
 # Ejecutar comandos desde Telegram
 
 
-En este punto, tenemos un sistema de detención de intrusos que nos envia alertas a Telegram si detecta alguna intrusion. 
-A partir de aqui, vamos a implementar lo necesario, para poder interactuar con el Bot y ejecutar comandos en nuestro servidor. 
+Hasta este punto, hemos configurado un sistema de detección de intrusos utilizando Suricata, el cual nos envía alertas a Telegram cuando se detecta alguna intrusión en nuestro servidor. Ahora, vamos a implementar la funcionalidad necesaria para interactuar con nuestro Bot de Telegram y ejecutar comandos en el servidor.
 
-Este repositorio contiene un sistema que permite ejecutar comandos en un servidor a través de Telegram. Esto es útil para la administración remota de sistemas.
+Este proceso nos permitirá utilizar el Bot de Telegram para enviar comandos al servidor y recibir los resultados de su ejecución directamente en nuestra conversación de Telegram. Esto añade una capa adicional de accesibilidad y control sobre nuestro servidor, ya que podemos gestionarlo y realizar acciones específicas sin necesidad de acceder al terminal directamente.
 
 1. Navega hasta la carpeta donde se encuentra el bot en el servidor:
    
