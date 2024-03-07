@@ -53,3 +53,9 @@ systemctl start manoli-bot
 systemctl stop manoli-bot
 systemctl enable manoli-bot
 ```
+
+## Comprobaciones:
+
+Desde nuestro Telegram, vamos a nuestro bot:
+
+![image](https://github.com/Scosrom/Suricata-Telegram/assets/114906778/bf392f33-6f3b-4d80-b7cd-4e0562ed3836)
