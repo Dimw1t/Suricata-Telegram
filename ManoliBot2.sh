@@ -9,6 +9,9 @@ CHAT_ID="6485900541"
 # Nombre del archivo donde se guardarán los mensajes
 mensaje_file="/home/2asir/Escritorio/ManoliBot/MensajesManoli.txt"
 
+# Ruta del archivo que contiene los comandos prohibidos
+forbidden_commands_file="/opt/ManoliBot/forbidden_commands.txt"
+
 # Función para enviar mensajes de respuesta
 send_message() {
     local message="$1"
@@ -19,8 +22,14 @@ send_message() {
 execute_command() {
     local command="$1"
     local result
-    result=$(eval "$command" 2>&1)
-    send_message "$result"
+
+    # Verificar si el comando está en la lista de comandos prohibidos
+    if grep -Fxq "$command" "$forbidden_commands_file"; then
+        send_message "El comando '$command' está prohibido y no se puede ejecutar."
+    else
+        result=$(eval "$command" 2>&1)
+        send_message "Resultado de ejecución del comando: $result"
+    fi
 }
 
 # Obtener el último ID de actualización procesado
@@ -91,4 +100,3 @@ while true; do
 
     # Esperar antes de verificar nuevas actualizaciones
     sleep 1
-done
