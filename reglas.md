@@ -32,26 +32,33 @@ sudo suricata-update enable-source ptresearch/attackdetection
 Puedes habilitar otros conjuntos de reglas de la misma manera, por ejemplo:
 
 ```
-sudo suricata-update enable-source sslbl/ssl-fp-blacklist
-sudo suricata-update enable-source ptresearch/attackdetection
-sudo suricata-update enable-source scwx/malware
-sudo suricata-update enable-source et/pro
-sudo suricata-update enable-source et/open
-sudo suricata-update enable-source scwx/enhanced
-sudo suricata-update enable-source scwx/security
 sudo suricata-update enable-source 
+
+Sin token:
+sudo suricata-update enable-source sslbl/ssl-fp-blacklist
 sudo suricata-update enable-source sslbl/ja3-fingerprints
+sudo suricata-update enable-source ptresearch/attackdetection
+sudo suricata-update enable-source et/open
 sudo suricata-update enable-source etnetera/aggressive
 sudo suricata-update enable-source tgreen/hunting
 sudo suricata-update enable-source malsilo/win-malware
 sudo suricata-update enable-source stamus/lateral
+sudo suricata-update enable-source pawpatrules
+sudo suricata-update enable-source oisf/trafficid
+
+
+Con token:
+sudo suricata-update enable-source scwx/malware
+sudo suricata-update enable-source et/pro
+sudo suricata-update enable-source scwx/enhanced
+sudo suricata-update enable-source scwx/security
 sudo suricata-update enable-source stamus/nrd-30-open
 sudo suricata-update enable-source stamus/nrd-14-open
 sudo suricata-update enable-source stamus/nrd-entropy-30-open
 sudo suricata-update enable-source stamus/nrd-entropy-14-open
 sudo suricata-update enable-source stamus/nrd-phishing-30-open
 sudo suricata-update enable-source stamus/nrd-phishing-14-open
-sudo suricata-update enable-source pawpatrules
+
 
 ```
 Para ver las fuentes habilitadas:
